@@ -1,7 +1,9 @@
 from flask import Flask, redirect, render_template, request, session, url_for
 
+from .secrets import SECRET_KEY_SESSION
+
 app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = SECRET_KEY_SESSION
 
 
 @app.route("/")
