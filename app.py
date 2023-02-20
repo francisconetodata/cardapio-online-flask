@@ -1,6 +1,6 @@
 from flask import Flask, redirect, render_template, request, session, url_for
 
-from .secrets_1 import SECRET_KEY_SESSION
+from .secrets_keys import SECRET_KEY_SESSION
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY_SESSION
